@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1;
+  }
+
+  .app-padding {
+    @apply mx-auto px-4 pt-12 sm:max-w-7xl md:max-w-7xl md:px-24 lg:max-w-7xl lg:px-0;
+  }
+
+  .text-overlay__large{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  .text-overlay__small{
+    text-align: center;
+    color: white;
+  }
+  .bg_kingschippy{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('https://preview.colorlib.com/theme/meal2/images/hero_bg.jpg.webp');
+  width: 100%;
+  background-size: cover;
+  color: white;
+  animation: zoomAnimation 7s infinite alternate;
+  background-position: 40% 25%;;
+  }
+/* 
+  @keyframes zoomAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+
+    100% {
+      transform: scale(1.2);
+    }
+  } */
+}
