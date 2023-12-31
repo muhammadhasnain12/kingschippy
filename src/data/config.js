@@ -41,7 +41,8 @@ export const socialIcons = [
   },
   {
     id: 'Just Eact',
-    icon: <SiJusteat className='h-6 w-6' />
+    icon: <SiJusteat className='h-6 w-6' />,
+    link: 'https://kingschippy.co.uk/'
   }
 ];
 
@@ -54,8 +55,13 @@ export const navLinks = [
     },
     {
       id: "about",
-      title: "About US",
+      title: "About",
       link: "#about-us"
+    },
+    {
+      id: "menues",
+      title: "Menues",
+      link: "#menues"
     },
     {
       id: "services",

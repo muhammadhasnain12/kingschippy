@@ -11,7 +11,7 @@ const Navbar = () => {
   const [activeNav, setActtiveNav] = useState(false);
 
   return (
-    <div className=" mx-auto flex justify-between items-center p-4 ">
+    <div className=" mx-auto flex justify-between items-center md:px-20 lg:px-20 px-3">
       <div className=" flex items-center gap-2">
         <GiKnifeFork className="text-white h-10 w-10" />
         <h1 className=" text-2xl sm:text-3xl lg:text-4xl ">
@@ -23,16 +23,16 @@ const Navbar = () => {
           <ul className=" flex flex-row gap-5 text-white p-4 text-gray-800 ">
 
             {navLinks.map((items) => (
-              <li className="text-xl py-4 flex" key={items.id}>
+              <a className="text-[18px] py-4 flex cursor-pointer font-light" href={items.link} key={items.id}>
                 {items.title}
-              </li>
+              </a>
             ))}
           </ul>
         </nav>
 
       </div>
       <div className="flex flex-wrap items-center">
-      <button className="bg-orange-500 border-orange-500 border px-5 py-2 rounded-full text-[13px] font-medium md:flex hidden">EXPLORE NOW</button>
+      <a href="#contact-us" className="bg-orange-500 border-orange-500 border px-5 py-2 rounded-full text-[13px] font-medium md:flex hidden">Book A Table</a>
       <div onClick={() => setActtiveNav(!activeNav)} className=" cursor-pointer md:hidden flex ">
           <AiOutlineMenu size={30} />
         </div>
@@ -68,9 +68,9 @@ const Navbar = () => {
           <ul className=" flex flex-col p-4 text-gray-800 ">
 
             {navLinks.map((items) => (
-              <li className="text-xl py-4 flex" key={items.id}>
+              <a className="text-xl py-4 flex cursor-pointer" href={items.link} key={items.id} onClick={() => setActtiveNav(!activeNav)}>
                 {items.title}
-              </li>
+              </a>
             ))}
           </ul>
         </nav>

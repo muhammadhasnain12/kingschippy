@@ -5,6 +5,18 @@ import { GiKnifeFork } from "react-icons/gi";
 
 
 // import Copyrights from "./copyright";
+const CopyRight = (    <div className='border-t pb-10 pt-5'>
+<p className='text-center text-sm text-gray-100'>
+  © Copyright 2023{' '}
+  <a
+    href='https://muhammadhasnaininfo.vercel.app'
+    className='text-primary'
+  >
+    Muhammad Hasnain
+  </a>{' '}
+  . All rights reserved.
+</p>
+</div>)
 
 
 const Footer = () => {
@@ -24,13 +36,13 @@ const Footer = () => {
             </a>
             <div className='mt-4 md:pl-2 lg:max-w-sm'>
               <p className='text-sm text-babag-light'>
-                We are very passionate about the Indian cuisine. Our efforts are dedicated to bringing out the intricate nuances that the various Indian dishes are associated with.
-                To ensure that, we use some of the most exclusive spices that India is the land to. Through our extended experience in the food industry, we have gained many tips and tricks that help us to make your food phenomenal in taste.
+              At Kings Chippy, we take pride in delivering not just a meal but a culinary experience that reflects the essence of our vibrant locale. Join us on a journey of taste and tradition, where every bite tells a story of quality and satisfaction.
+               Come savor the flavors that make Kings Chippy a true gem in Glasgow's dining scene.
               </p>  
               <div className='mt-4 flex items-center space-x-4'>
                 {socialIcons.map((data) => (
                   <a
-                    href='/'
+                    href={data.link}
                     className='text-babag-light transition-colors duration-300 hover:text-babag-light'
                     key={data.id}
                   >
@@ -47,7 +59,7 @@ const Footer = () => {
                 Services
               </h2>
               <ul className='mt-2 space-y-3 text-babag-light'>
-                {['Take-Out', 'Dine In', 'UberEats', 'JustEat'].map(
+                {['Fast Food', 'Pizza', 'Wings', 'Latest Deals'].map(
                   (data) => (
                     <li key={data} className='py-1'>
                       <a
@@ -72,17 +84,19 @@ const Footer = () => {
                 </li>
                 <li className="flex flex-row gap-2 text-[14px] font-thin">
                   <p>Email:</p>
-                  <p> babgrasturant@gmail.com</p>
+                  <p> foodlike786@yahoo.com</p>
                 </li>
                 <li className="flex flex-row gap-2 text-[14px] font-thin">
                   <p>Address:</p>
-                  <p>255 Castlemilk Road, Rutherglen, Glasgow, G44 4LE </p>
+                  <p>253 Castlemilk Road, Glasgow, G444LE </p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
+      {CopyRight}
     </div>
   );
 };

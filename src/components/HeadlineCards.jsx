@@ -12,12 +12,12 @@ function HeadlineCards() {
         {/* overlay */}
         <div className=" absolute w-full h-full bg-black/10 rounded-xl text-white ">
           <p className=" font-bold text-2xl px-2 pt-4 ">
-            Sun's Out, BOGO's Out
+          Oceanic Fry Delight
           </p>
           <p className=" px-2 ">Through 8/26</p>
-          <button className=" border-white bg-white text-black mx-2 absolute bottom-4">
+          {/* <button className=" border-white bg-white text-black mx-2 absolute bottom-4">
             Order Now
-          </button>
+          </button> */}
         </div>
 
         <Image
@@ -30,11 +30,9 @@ function HeadlineCards() {
       <div className=" rounded-xl relative ">
         {/* overlay */}
         <div className=" absolute w-full h-full bg-black/30 rounded-xl text-white ">
-          <p className=" font-bold text-2xl px-2 pt-4 ">New Restaurants</p>
+          <p className=" font-bold text-2xl px-2 pt-4 ">Burger Junction</p>
           <p className=" px-2 ">Added Daily</p>
-          <button className=" border-white bg-white text-black mx-2 absolute bottom-4">
-            Order Now
-          </button>
+
         </div>
         <Image
           className=" max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl "
@@ -47,12 +45,10 @@ function HeadlineCards() {
         {/* overlay */}
         <div className=" absolute w-full h-full bg-black/30 rounded-xl text-white ">
           <p className=" font-bold text-2xl px-2 pt-4 ">
-            We Deliver Desserts Too
+          Frozen Delight Dessert Haven
           </p>
           <p className=" px-2 ">Tasty Treats</p>
-          <button className=" border-white bg-white text-black mx-2 absolute bottom-4">
-            Order Now
-          </button>
+
         </div>
         <Image
           className=" max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl "

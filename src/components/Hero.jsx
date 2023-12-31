@@ -1,10 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import img from "../../public/burger.jpg";
-import img1 from "../../public/b-1.jpg";
-import img2 from "../../public/b-2.jpg";
-import img3 from "../../public/b-3.jpg";
-import img4 from "../../public/b-4.jpg";
 
 function Hero() {
   return (
@@ -15,9 +9,9 @@ function Hero() {
           Treat <span className="text-orange-500">Yourself</span>  
         </h1>
         <p className='text-white font-[600] tracking-wide	text-[25px] font-medium leading-9 font-serif'>
-          Another free template by Colorlib. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        🌊  Dive into a sea of flavor with our signature Fish & Chips, expertly crafted for that perfect crunch and succulent bite. Our commitment to using the freshest catches ensures a maritime journey on every plate.
         </p>
-        <button className="bg-orange-500 border-orange-500 border px-5 py-2 rounded-full">EXPLORE NOW</button>
+        <a className="bg-orange-500 border-orange-500 border px-5 py-2 font-medium rounded-full cursor-pointer text-white" href='#menues'>EXPLORE NOW</a>
 
       </div>
 

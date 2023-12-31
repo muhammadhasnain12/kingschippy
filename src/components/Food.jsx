@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { data } from "../data/data.js";
 import Image from "next/image";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 function Food() {
   const [foods, setFoods] = useState(data);
@@ -53,22 +55,22 @@ function Food() {
             >
               Pizza
             </button>
-            <button
+            {/* <button
               onClick={() => filterType("salad")}
               className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1  "
             >
               Salads
-            </button>
+            </button> */}
             <button
-              onClick={() => filterType("chicken")}
+              onClick={() => filterType("fish")}
               className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1  "
             >
-              Chickens
+              Fish & Chips
             </button>
           </div>
         </div>
         {/* Filter price */}
-        <div className="">
+        {/* <div className="">
           <p className=" font-bold text-gray-700 ">Filter price</p>
           <div className=" flex justify-between max-w-[390px] w-full ">
             <button
@@ -96,7 +98,7 @@ function Food() {
               $$$$
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Display Foods */}
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4 ">
@@ -114,10 +116,9 @@ function Food() {
             />
             <div className=" flex justify-between px-2 py-4 ">
               <p className=" font-bold "> {item.name} </p>
-              <p>
-                <span className=" bg-orange-500 text-white p-1 rounded-full ">
-                  {item.price}
-                </span>
+              <p className="bg-orange-500 text-white p-1 rounded-full">
+                  <FaShoppingCart className="p-0.5" />
+        
               </p>
             </div>
           </div>

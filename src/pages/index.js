@@ -1,10 +1,11 @@
 import AboutUs from "@/components/AboutUs";
 import Category from "@/components/Category";
+import Contact from "@/components/Contact";
 import Food from "@/components/Food";
 import Footer from "@/components/Footer";
 import HeadlineCards from "@/components/HeadlineCards";
 import Hero from "@/components/Hero";
-import MenueAccordion from "@/components/MenueAccordion";
+import Menues from "@/components/Menue";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -17,7 +18,9 @@ export default function Home() {
       <HeadlineCards />
       <Food />
       <AboutUs />
-      <Category />  
+      <Menues />
+      <Category />
+      <Contact />  
       <Footer />
     </main>
   );
