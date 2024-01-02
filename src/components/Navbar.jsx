@@ -5,7 +5,6 @@ import {
 } from "react-icons/ai";
 
 import { navLinks } from "@/data/config";
-import { GiKnifeFork } from "react-icons/gi";
 
 const Navbar = () => {
   const [activeNav, setActtiveNav] = useState(false);
@@ -13,7 +12,7 @@ const Navbar = () => {
   return (
     <div className=" mx-auto flex justify-between items-center md:px-20 lg:px-20 px-3">
       <div className=" flex items-center gap-2">
-        <GiKnifeFork className="text-white h-10 w-10" />
+        <img src={"/kings_chippy_logo.png"}  className="w-12 h-12 "/>
         <h1 className=" text-2xl sm:text-3xl lg:text-4xl ">
           Kings <span className=" font-bold ">Chippy</span>
         </h1>

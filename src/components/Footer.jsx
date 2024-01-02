@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { socialIcons } from "@/data/config";
-import { GiKnifeFork } from "react-icons/gi";
 
 
 // import Copyrights from "./copyright";
@@ -31,7 +30,7 @@ const Footer = () => {
               title='AcuCare'
               className='inline-flex items-center'
             >
-              <GiKnifeFork className="h-11 w-11" />
+              <img src={"/kings_chippy_logo.png"}  className="w-12 h-12 "/>
               <h2 className='text-babag-light font-semibold text-[18px] md:text-[24px]'><span className='text-primary'>Kings</span> Chippy</h2>
             </a>
             <div className='mt-4 md:pl-2 lg:max-w-sm'>
