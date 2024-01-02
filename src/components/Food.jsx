@@ -36,7 +36,7 @@ function Food() {
         {/* Filter type */}
         <div className="">
           <p className=" font-bold text-gray-700 ">Filter Type</p>
-          <div className=" flex justify-between flex-wrap ">
+          <div className=" flex flex-wrap ">
             <button
               onClick={() => setFoods(data)}
               className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1  "
@@ -45,13 +45,13 @@ function Food() {
             </button>
             <button
               onClick={() => filterType("burger")}
-              className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1  "
+              className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1 px-10 md:px-5"
             >
               Burgers
             </button>
             <button
               onClick={() => filterType("pizza")}
-              className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1  "
+              className=" border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1  px-10 md:px-5"
             >
               Pizza
             </button>
@@ -116,10 +116,10 @@ function Food() {
             />
             <div className=" flex justify-between px-2 py-4 ">
               <p className=" font-bold "> {item.name} </p>
-              <p className="bg-orange-500 text-white p-1 rounded-full">
+              {/* <p className="bg-orange-500 text-white p-1 rounded-full">
                   <FaShoppingCart className="p-0.5" />
         
-              </p>
+              </p> */}
             </div>
           </div>
         ))}
